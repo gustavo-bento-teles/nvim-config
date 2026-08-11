@@ -6,7 +6,6 @@ Esta é uma configuração estritamente pessoal, desenvolvida para atender às m
 
 * Os mesmos pré-requisitos exigidos pelo [LazyVim](https://www.lazyvim.org/).
 * `pio` (PlatformIO Core) instalado globalmente para o funcionamento do plugin do PlatformIO.
-* `cmatrix` instalado no sistema (opcional, necessário apenas caso queira a animação ativa no dashboard).
 
 ---
 
@@ -39,9 +38,3 @@ Com esse conjunto mínimo de ajustes, o ambiente estará totalmente funcional e 
 ## 🌐 Uso Geral (Outras Linguagens)
 
 Para projetos que não utilizam o PlatformIO ou que rodam em outras linguagens, o ecossistema funciona de forma nativa e automática. Todas as linguagens suportadas e declaradas em lua/plugins/lsp.lua funcionarão sem a necessidade de configurações adicionais (inclusive projetos em C/C++ convencionais que não sejam voltados para embarcados).
-
-## 🎨 Customização do Dashboard
-
-> O dashboard possui uma detecção automática. Se o comando cmatrix estiver instalado no sistema operacional, ele será renderizado como um header animado. Caso o pacote não seja encontrado, a configuração usará automaticamente o cabeçalho estático em texto "BentoVim" como plano de fundo seguro.
-
-Caso você queira modificar o nome do cabeçalho (Header) ou alterar o comportamento da animação do Matrix, basta abrir e editar o arquivo `lua/plugins/snacks.lua` (onde as configurações do dashboard do *snacks.nvim* estão concentradas) e alterar o conteúdo de texto do bloco ASCII ou os comandos do terminal.
